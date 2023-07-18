@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <!-- Mise en place de l'en-tête de la page -->
+        <!-- Mise en place de l'en-tête de la page du Portfolio -->
         <header>
 
             <nav id="navbar">
