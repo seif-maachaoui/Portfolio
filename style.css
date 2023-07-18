@@ -1,0 +1,637 @@
+/* Importation d'une police de caractère */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+/* Propriété CSS d'ordre général */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Anton', sans-serif;
+    color: #fece31;
+}
+
+
+/* une propriété CSS qui permet d'avoir un défilement vertical en douceur*/
+html{
+    scroll-behavior: smooth;
+}
+
+/* Ajout d'un dégradé de couleur à l'élément body à l'aide du site CSS Gradient */
+body{
+    background-image: url('./images/background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+
+header{
+    background-color: #39383893;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+
+header nav{
+    width: 50%;
+}
+
+header nav label, #toggle{
+    display: none;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    cursor: pointer;
+    color: #4BD5EE;
+}
+
+/* Design de la section d'accueil */
+
+#home{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#home article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+
+}
+
+#home article .name{
+    width: 100%;
+}
+
+#home article .name h1, h2{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3%;
+}
+
+/* Design de la section About me */
+
+#about_me{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#about_me article{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: #39383893;
+
+}
+
+#about_me article h4{
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 5%;
+    
+}
+
+#about_me article img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 5%;
+    box-shadow: 0 0 10px 0 rgb(125, 124, 124);
+}
+
+#about_me article p{
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+    padding: 3%;
+}
+
+
+/* Design de la section CV */
+
+#cv{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#cv article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: #39383893;
+    
+}
+
+#cv article h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 3%;
+}
+
+#cv article .mini-cv{
+    display: none;
+}
+
+/* Design de la section Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+
+#projects h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 3%;
+}
+
+#projects article{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 100px;
+    padding: 8%;
+    background-color: #39383893;
+}
+
+
+
+#projects article div{
+    width: 220px;
+    height: 200px;
+    box-shadow: 0 0 10px 0 rgba(197, 193, 193, 0.409);
+}
+
+#projects article div img{
+    width: 100%;
+    height: 100%;
+}
+
+#projects article div p{
+    font-size: 13px;
+    text-align: center;
+    padding: 2%;
+}
+
+#projects article .empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects article .empty img{
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+}
+
+/* Design de la section Skills */
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+#skills h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 3%;
+}
+#skills article{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 100px;
+    padding: 5%;
+    background-color: #39383893;
+}
+
+#skills article div{
+    width: 150px;
+    height: 150px;
+}
+
+#skills article div img{
+    width: 100%;
+    height: 100%;  
+}
+
+#skills article div img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 1.20s;
+}
+
+
+/* Design de la section contact */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+#contact h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 3%;
+}
+
+#contact article{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
+    row-gap: 100px;
+    padding: 3% 3%;
+    background-color: #39383893;
+}
+
+#contact article a{
+    text-decoration: none;
+}
+
+#contact article img{
+    width: 100px;
+    height: 100px;
+    padding: 5%;
+}
+
+
+#contact article p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5%;   
+}
+
+/* Design du footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(99, 97, 97, 0.138);
+    background-color: #39383893;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+footer h6{
+    font-size: 14px;
+    text-align: center;
+    padding: 3%;
+}
+
+
+footer nav{
+    width: 30%;
+    margin: 3%;
+}
+
+footer nav ul{
+    list-style: none;
+}
+
+footer nav ul li{
+    display: inline-block;
+    padding: 2%;
+}
+
+footer nav ul li a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover{
+    cursor: pointer;
+    color: #4BD5EE;
+}
+
+footer article{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer article div{
+    width: 400px;
+   
+}
+
+footer article div ul{
+    list-style: none;
+}
+
+footer article div ul li{
+    display: block;
+    padding: 3%;
+}
+
+footer article div ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer article div ul li a:hover{
+    cursor: pointer;
+    color: #4BD5EE;
+}
+
+
+/* RESPONSIVE DESIGN FOR SMARTPHONES AND TABLETS */
+
+@media all and (min-width: 200px) and (max-width: 1000px){
+    
+    /* RESPONSIVE DESIGN FOR HEADER */
+    header{
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    header nav{
+        width: 30%;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+      
+      .sticky + body {
+        padding-top: 60px;
+    }
+    
+    header nav label{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    header nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li{
+        padding: 1%;
+    }
+
+    #toggle:checked + ul {
+        display: flex;
+    }
+
+    /* RESPONSIVE DESIGN FOR HOME SECTION */
+
+    #home article .name h1, h2{
+        font-size: 20px;
+        padding: 3%;
+    }
+
+    /* RESPONSIVE FOR ABOUT_ME SECTION */
+    
+    #about_me article h4{
+        font-size: 20px;
+        margin: 5%;
+    }
+    
+    #about_me article img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    #about_me article p{
+        width: 50%;
+        font-size: 16px;
+        text-align: center;
+        padding: 5%;
+    }
+    
+    
+    /* RESPONSIVE DESIGN FOR CV SECTION */
+    
+    #cv{
+        display: flex;
+        justify-content: center;
+        margin: 10%;
+        padding: 5%;
+    }
+    
+    #cv article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        background-color: #39383893;
+        
+    }
+    
+    #cv article h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        padding: 5%;
+    }
+
+    #cv article iframe{
+        display: none;
+    }
+
+    #cv article .mini-cv{
+        display: block;
+        width: 100%;
+    }
+
+    #cv article .mini-cv img{
+        width: 100px;
+        height: 100px;
+        padding: 5%;
+    }
+    
+    /* RESPONSIVE DESIGN FOR PROJECTS SECTION */
+    
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+    
+    
+    #projects h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        padding: 3%;
+    }
+    
+    #projects article{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 60px;
+        row-gap: 100px;
+        padding: 10%;
+        
+    }
+    
+    
+    #projects article div{
+        width: 220px;
+        height: 200px;
+        box-shadow: 0 0 10px 0 rgba(197, 193, 193, 0.409);
+    }
+    
+    #projects article div img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #projects article div p{
+        font-size: 13px;
+        text-align: center;
+        padding: 2%;
+    }
+    
+    /* RESPONSIVE DESIGN FOR ARTICLE SECTION */
+    
+    
+    #skills article{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10%;
+    }
+    
+    
+    /* RESPONSIVE DESIGN FOR CONTACT SECTION */
+    
+    #contact article{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10%;
+    }
+    
+    /* RESPONSIVE DESIGN FOR FOOTER SECTION */
+    
+    footer{
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(99, 97, 97, 0.138);
+        background-color: #39383893;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;    
+    }
+    
+    footer h6{
+        font-size: 12px;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    
+    footer nav{
+        width: 40%;
+        margin: 3%;
+    }
+    
+    footer nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer nav ul li{
+        display: block;
+        padding: 3%;
+    }
+    
+    footer nav ul li a{
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    footer nav ul li a:hover{
+        cursor: pointer;
+        color: #4BD5EE;
+    }
+    
+    footer article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer article div{
+        width: 300px;
+        margin: 5%;
+       
+    }
+    
+    footer article div ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer article div ul li{
+        display: block;
+        padding: 3%;
+    }
+    
+    footer article div ul li a{
+        text-decoration: none;
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    footer article div ul li a:hover{
+        cursor: pointer;
+        color: #4BD5EE;
+    }
+      
+}
